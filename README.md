@@ -1,7 +1,5 @@
 # holi-app
 
-# holiday-api
-
 ## Índice
 <!--ts-->
    * [Informações Gerais](#informações-gerais)
@@ -26,7 +24,7 @@ A ideia desta aplicação é um sistema simples de consulta onde o usuário esco
 
 ### Rotas
 
-Na API, a entidade Date possui suas rotas seguindo o conceito e as regras da API Rest, ou seja, estas rotas estão associadas as funções para criação, atualização, leitura e exlusão (create, read, update, delete) dos dados. Apesar do aplicativo não se utilizar de todas as rotas.
+Na API, a entidade Date possui suas rotas seguindo o conceito e as regras da API Rest, ou seja, estas rotas estão associadas as funções para criação, atualização, leitura e exlusão (create, read, update, delete) dos dados. Apesar do aplicativo não se utilizar de todas elas.
 
 Para testar as rotas, a URL utilizada é `` http://localhost:8000/api/ ``. Caso haja dúvidas, no arquivo `` routes\api.php `` estão todas desta aplicação.
   
