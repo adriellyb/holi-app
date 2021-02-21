@@ -4,7 +4,7 @@
 <!--ts-->
    * [Informações Gerais](#informações-gerais)
       * [Desenvolvedora](#desenvolvedora)
-      * [Framework Utilizada](#framework-utilizada)
+      * [Frameworks Utilizada](#frameworks-utilizada)
       * [API Externa Utilizada](#api-externa-utilizada)
       * [Rotas](#rotas)
    * [Servindo o projeto](#servindo-o-projeto)
