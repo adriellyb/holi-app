@@ -1,0 +1,23 @@
+<ion-header translucent>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <img src="../../assets/logo.png" class="logo" alt="logo-calendario" />
+    <h2>HoliApp</h2>
+    <div class="text-box">
+      <ion-card>
+        <img src="../../assets/calendar.jpg" alt="calendario" />
+        <ion-card-header>
+          <ion-card-subtitle>{{dateInfos['day']}} / {{dateInfos['month']}} / {{dateInfos['year']}}, {{dateInfos['country']}}</ion-card-subtitle>
+          <ion-card-title id="title"></ion-card-title>
+        </ion-card-header>
+        <ion-card-content id="content">
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <ion-row class="ion-justify-content-center">
+      <ion-button shape="round" (click)="goHome()">New Date</ion-button>
+    </ion-row>
+  </div>
+</ion-content>

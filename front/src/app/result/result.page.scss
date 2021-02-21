@@ -1,0 +1,47 @@
+ion-content {
+    --background: url('../../assets/bg2.png') 0 0/100% 100% no-repeat;
+  }
+  
+  #container {
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #container .logo {
+      max-width: 100px;
+  }
+
+  #container h2 {
+    color: #f0f0f0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(22, 21, 21);
+  }
+
+  ion-card-subtitle {
+    text-transform: uppercase;
+  }
+
+  ion-card-title {
+    font-size: 28px;
+  }
+
+  ion-card-content {
+    font-size: 18px;
+  }
+
+  ion-card {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+  }
+
+  ion-button{
+    margin-top: 18px;
+    text-transform: uppercase;
+  }

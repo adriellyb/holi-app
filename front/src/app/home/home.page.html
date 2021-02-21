@@ -1,0 +1,53 @@
+<ion-header translucent>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <img src="../../assets/logo.png" alt="logo-calendario" />
+    <h2>HoliApp</h2>
+    <form [formGroup]="dateForm" (ngSubmit)="submitForm(dateForm)">
+      <div class="box-form">    
+        <div class="form-item">
+          <ion-item>
+            <ion-label>Day</ion-label>
+            <ion-select interface="popover" formControlName="day">
+              <ion-select-option *ngFor="let num of dia" value="{{num}}">{{num}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <div class="form-item">
+          <ion-item>
+            <ion-label>Month</ion-label>
+            <ion-select interface="popover"  formControlName="month">
+              <ion-select-option *ngFor="let num of mes" value="{{num}}">{{num}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <div class="form-item">
+          <ion-item>
+            <ion-label>Year</ion-label>
+            <ion-select interface="popover"  formControlName="year">
+              <ion-select-option *ngFor="let num of ano" value="{{num}}">{{num}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <div class="form-item">
+          <ion-item>
+            <ion-label>American Country</ion-label>
+            <ion-select interface="popover" formControlName="country">
+              <ion-select-option *ngFor="let pais of paises" value="{{pais.iso}}">{{pais.nome}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-button shape="round" type="submit" [disabled]="dateForm.invalid">Search Holiday</ion-button>
+      </ion-row>
+    </form>
+
+  </div>
+</ion-content>
