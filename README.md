@@ -4,7 +4,7 @@
 <!--ts-->
    * [Informações Gerais](#informações-gerais)
       * [Desenvolvedora](#desenvolvedora)
-      * [Frameworks Utilizada](#frameworks-utilizada)
+      * [Frameworks Utilizadas](#frameworks-utilizadas)
       * [API Externa Utilizada](#api-externa-utilizada)
       * [Rotas](#rotas)
    * [Servindo o projeto](#servindo-o-projeto)
@@ -22,7 +22,7 @@ A ideia desta aplicação é um sistema simples de consulta onde o usuário esco
 
 - Adrielly Balbino
 
-### Frameworks Utilizada
+### Frameworks Utilizadas
 - [Laravel](https://laravel.com/docs/8.x)
 - [Ionic](https://ionicframework.com/docs/)
 
@@ -73,6 +73,7 @@ cp .env.example .env
 ```bash
 php artisan key:generate
 php artisan migrate:fresh
+php artisan serve
 ```
 
 
