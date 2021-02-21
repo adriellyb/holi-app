@@ -8,8 +8,8 @@
       * [API Externa Utilizada](#api-externa-utilizada)
       * [Rotas](#rotas)
    * [Servindo o projeto](#servindo-o-projeto)
-      * [Front](#para-o-front)
-      * [Back](#para-o-back)
+      * [Front](#2-para-o-front)
+      * [Back](#3-para-o-back)
 <!--te-->
 
 ## Informações Gerais
