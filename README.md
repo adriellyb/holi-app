@@ -68,7 +68,7 @@ cp .env.example .env
 ```
 
 - Crie um BD no ``phpMyAdmin``
-- Mude o nome do BD no ``.env`` na variável ``DB_DATABASE`` de acordo com o criado anteriormente
+- Mude o nome do BD no arquivo ``.env`` na variável ``DB_DATABASE`` de acordo com o criado anteriormente
 
 ```bash
 php artisan key:generate
