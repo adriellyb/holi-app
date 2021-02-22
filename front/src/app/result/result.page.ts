@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
 import { DateService } from '../services/date.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class ResultPage implements OnInit {
   public dateInfos = [];
 
   constructor(  public route: Router,
-                public dateService: DateService) { }
+                public dateService: DateService,
+                public loadingController: LoadingController) { }
 
   ngOnInit() {
     this.showHoliday();
@@ -39,6 +41,7 @@ export class ResultPage implements OnInit {
 
   showHoliday(){
     let id = localStorage.getItem('id');
+    this.presentLoading();
     this.dateService.getHoliday(id).subscribe(
       (res) =>{
         this.holidayInfos = res;
@@ -57,6 +60,16 @@ export class ResultPage implements OnInit {
         console.log(err);
       }
     );
+  }
+
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      cssClass: 'my-custom-class',
+      message: 'Please wait...',
+      duration: 1500,
+      spinner: 'lines'
+    });
+    await loading.present();
   }
 
 }

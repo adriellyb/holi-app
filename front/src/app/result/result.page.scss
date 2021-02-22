@@ -45,3 +45,10 @@ ion-content {
     margin-top: 18px;
     text-transform: uppercase;
   }
+
+  .my-custom-class {
+    --background: #222;
+    --spinner-color: #fff;
+  
+    color: #fff;
+  }
