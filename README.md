@@ -14,7 +14,7 @@
 
 ## Informações Gerais
 
-Olá, amigue! Bem vindos ao HoliApp!
+Olá, amigue! Bem vinde ao HoliApp!
 
 A ideia desta aplicação é um sistema simples de consulta onde o usuário escolhe dia, mês, ano e país para a consulta e o sistema retorna se há (ou não) um feriado no país e na data escolhida. A entidade é apenas Date.
 
