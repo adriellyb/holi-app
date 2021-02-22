@@ -69,7 +69,7 @@ cp .env.example .env
 
 - Crie um BD no ``phpMyAdmin``
 - Mude o nome do BD no arquivo ``.env`` na variável ``DB_DATABASE`` de acordo com o criado anteriormente
-- No mesmo arquivo, crie as variáveis ``API_URL_BASE`` e ``API_KEY``, a primeira receberá o valor ``https://calendarific.com`` (endpoint da API externa) e a segunda deverá receber a chave de acesso da API, a qual você pode adquirir se registrando [aqui](https://calendarific.com/signup)
+- No mesmo arquivo, crie as variáveis ``API_BASE_URL`` e ``API_KEY``, a primeira receberá o valor ``https://calendarific.com`` (endpoint da API externa) e a segunda deverá receber a chave de acesso da API, a qual você pode adquirir se registrando [aqui](https://calendarific.com/signup)
 
 ```bash
 php artisan key:generate
